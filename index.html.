@@ -1,62 +1,58 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Pergunta Interativa</title>
-  <style>
-    body {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      height: 100vh;
-      background-color: #ffffff;
-      font-family: Arial, sans-serif;
-    }
-    h1 {
-      margin-bottom: 30px;
-    }
-    button {
-      padding: 15px 25px;
-      margin: 10px;
-      font-size: 18px;
-      cursor: pointer;
-    }
-    #theRock {
-      display: none;
-      margin-top: 20px;
-      max-width: 300px;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste The Rock</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #fff;
+            flex-direction: column;
+        }
+        #theRock {
+            max-width: 400px;
+            display: none; /* começa escondida */
+        }
+        button {
+            margin: 10px;
+            padding: 10px 20px;
+            font-size: 18px;
+            cursor: pointer;
+        }
+    </style>
 </head>
 <body>
-  <h1>Você é gay?</h1>
-  <div>
-    <button id="simBtn">Sim</button>
-    <button id="naoBtn">Não</button>
-  </div>
-  <img id="theRock" src="c8909ecd-8366-4450-8501-d03ef4d21391.png" alt="The Rock">
 
-  <script>
-    const simBtn = document.getElementById('simBtn');
-    const naoBtn = document.getElementById('naoBtn');
-    const theRock = document.getElementById('theRock');
+    <h1>Você é gay?</h1>
+    <button id="sim">Sim</button>
+    <button id="nao">Não</button>
 
-    // Botão "Sim"
-    simBtn.addEventListener('click', () => {
-      theRock.style.display = 'block';
-      alert('PUTA QUE PARIU');
-    });
+    <img id="theRock" src="c8909ecd-8366-4450-8501-d03ef4d21391.png" alt="The Rock">
 
-    // Botão "Não" que foge do mouse
-    naoBtn.addEventListener('mouseenter', () => {
-      const x = Math.random() * (window.innerWidth - naoBtn.offsetWidth);
-      const y = Math.random() * (window.innerHeight - naoBtn.offsetHeight);
-      naoBtn.style.position = 'absolute';
-      naoBtn.style.left = `${x}px`;
-      naoBtn.style.top = `${y}px`;
-    });
-  </script>
+    <script>
+        const btnSim = document.getElementById('sim');
+        const btnNao = document.getElementById('nao');
+        const img = document.getElementById('theRock');
+
+        // Botão "Sim" mostra a imagem
+        btnSim.addEventListener('click', () => {
+            img.style.display = 'block';
+            alert('PUTA QUE PARIU');
+        });
+
+        // Botão "Não" foge do mouse
+        btnNao.addEventListener('mouseover', () => {
+            const x = Math.random() * (window.innerWidth - btnNao.offsetWidth);
+            const y = Math.random() * (window.innerHeight - btnNao.offsetHeight);
+            btnNao.style.position = 'absolute';
+            btnNao.style.left = x + 'px';
+            btnNao.style.top = y + 'px';
+        });
+    </script>
+
 </body>
 </html>
