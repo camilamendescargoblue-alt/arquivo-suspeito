@@ -31,7 +31,7 @@
     <button id="sim">Sim</button>
     <button id="nao">Não</button>
 
-    <img id="theRock" src="c8909ecd-8366-4450-8501-d03ef4d21391.png" alt="The Rock">
+    <img id="theRock" src="74e57ef9-5df5-44b4-8107-0e12e26063d4.jpg" alt="The Rock">
 
     <script>
         const btnSim = document.getElementById('sim');
