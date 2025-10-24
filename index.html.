@@ -47,7 +47,7 @@
     <button id="noBtn">Não</button>
   </div>
 
-  <img id="theRock" src="d6cdc88a-48c7-4ea0-b382-c0102a91e2f3.png" alt="The Rock">
+  <img id="theRock" src="74e57ef9-5df5-44b4-8107-0e12e26063d4" alt="The Rock">
   <div id="finalMessage">PUTA QUE PARIU!!!</div>
 
   <script>
