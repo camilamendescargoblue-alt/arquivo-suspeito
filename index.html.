@@ -12,6 +12,8 @@
             height: 100vh;
             background-color: #fff;
             flex-direction: column;
+            margin: 0;
+            overflow: hidden;
         }
         #theRock {
             max-width: 400px;
